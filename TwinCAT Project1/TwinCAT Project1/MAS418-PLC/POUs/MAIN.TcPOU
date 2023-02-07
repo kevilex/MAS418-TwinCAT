@@ -5,25 +5,18 @@
 VAR
 	bEnable : BOOL;
 	bStart : BOOL;
-	nINT : INT := -32768;
-	nUINT : UINT := 65535;
-	fREAL : REAL := 255.255;
-	sPowerStatus : STRING := 'Power off';
-	nFloatConversion : INT := 1;
-	floatie : LREAL := 0;
-	fFloatConversion : LREAL := 2.0;
-	intie : INT := 0;
+	
 END_VAR
-
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[bEnable := bStart;
 
-floatie := INT_TO_LREAL(nFloatConversion);
+pToString := ADR(dtVariable);
+var2Ref REF= var2;
 
-intie := LREAL_TO_INT(fFloatConversion);
+Timmie(IN := StartTimer);
 
-]]></ST>
+CurrentTimmie := Timmie.ET;]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="DB" Id="{cfcd30fd-6e5e-4ca5-9db1-0ada0c0c00a7}">
+    <Declaration><![CDATA[VAR_GLOBAL
+	dtVariable : DATE_AND_TIME := DT#2023-02-08-15:31:19;
+	pToString : POINTER TO STRING;
+	var2 : TIME := T#5S;
+	var2Ref: REFERENCE TO TIME;
+	var3 : ARRAY[1..4] OF DATE := [D#2023-02-7, D#2023-02-8, D#2023-02-9, D#2023-02-10];
+	
+	Sensor1 : Sensies := Sensies.Parker;
+	
+	StartTimer : BOOL := FALSE;
+	Timmie : TON := (PT := T#10S);
+	CurrentTimmie : TIME;
+	
+END_VAR
+
+]]></Declaration>
+  </GVL>
+</TcPlcObject>
