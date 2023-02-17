@@ -16,7 +16,19 @@ var2Ref REF= var2;
 
 Timmie(IN := StartTimer);
 
-CurrentTimmie := Timmie.ET;]]></ST>
+CurrentTimmie := Timmie.ET;
+
+TimerTof(IN := Timer2.StartTimer);
+Timer2.CurrentTime := Timer2.CurrentTime;
+
+DegToRad(Degval := Motor1,
+		Radval => Motor2);
+	
+
+
+
+
+]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

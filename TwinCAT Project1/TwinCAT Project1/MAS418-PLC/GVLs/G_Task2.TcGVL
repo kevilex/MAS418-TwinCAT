@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="G_Task2" Id="{b860b7dc-9d1a-44db-b182-d65f15d1fa9d}">
+    <Declaration><![CDATA[VAR_GLOBAL
+	Timer2 : ST_Timer := (TimeToPass:= T#5S);
+	TimerTof : TOF := (PT := Timer2.TimeToPass, Q := Timer2.IsFinished);
+	Motor1 : LREAL := 180;
+	Motor2 : LREAL;
+
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

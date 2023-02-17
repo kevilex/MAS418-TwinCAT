@@ -10,9 +10,11 @@
 	
 	Sensor1 : Sensies := Sensies.Parker;
 	
+	TimeToPass : TIME := T#10S;
+	Timmie : TON := (PT := TimeToPass);
 	StartTimer : BOOL := FALSE;
-	Timmie : TON := (PT := T#10S);
 	CurrentTimmie : TIME;
+	IsFinished : BOOL;
 	
 END_VAR
 
